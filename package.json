@@ -15,6 +15,7 @@
     "@react-three/drei": "^9.102.6",
     "@react-three/fiber": "^8.16.1",
     "axios": "^1.6.8",
+    "emailjs": "^4.0.3",
     "framer-motion": "^11.0.23",
     "gsap": "^3.12.5",
     "maath": "^0.10.7",
