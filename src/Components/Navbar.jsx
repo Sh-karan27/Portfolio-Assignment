@@ -28,7 +28,7 @@ const Navbar = () => {
     <header className='w-full py-5 sm:py-10 px-5 flex justify-between items-center'>
       <nav className='flex w-full screen-max-width'>
         <div className='flex flex-1 justify-center max-sm:hidden'>
-          {['Home', 'About', 'Services', 'Work', 'Contact'].map((nav) => (
+          {['Home', 'About', 'Services', 'Project', 'Contact'].map((nav) => (
             <NavLink to={nav === 'Home' ? '/' : `/${nav}`} key={nav}>
               <div
                 id='Nav'
@@ -58,11 +58,11 @@ const Navbar = () => {
           <div
             className='z-50 absolute top-20 left-0  mobile-nav w-full  flex items-center justify-center transition-transform duration-500 ease-in-out'
             style={{ transform: 'translateY(-100%)' }}>
-            {['Home', 'About', 'Services', 'Work', 'Contact'].map((nav) => (
+            {['Home', 'About', 'Services', 'Project', 'Contact'].map((nav) => (
               <NavLink
                 to={nav === 'Home' ? '/' : `/${nav}`}
                 key={nav}
-                className='px-4 py-2 text-sm text-white hover:underline  '
+                className='px-4 py-2 text-[10px] text-white hover:underline  '
                 style={{ transition: 'transform 0.5s ease-in-out' }}>
                 {nav}
               </NavLink>

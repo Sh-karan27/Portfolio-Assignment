@@ -4,7 +4,7 @@ import gsap from 'gsap';
 import ComputerCanvas from './Computers';
 
 const Home = () => {
-  const userAbout = useUserAboutData()
+  const userAbout = useUserAboutData();
 
   useEffect(() => {
     if (!userAbout) return;
@@ -44,7 +44,7 @@ const Home = () => {
         </div>
       </div>
       <div
-        className='w-full opacity-0 translate-y-10 flex items-center justify-center'
+        className=' w-full opacity-0 translate-y-10 flex items-center justify-center'
         id='DesktopPC'>
         <ComputerCanvas />
       </div>

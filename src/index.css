@@ -38,7 +38,46 @@ canvas {
 
 @media (max-width: 430px) {
   canvas {
-    height: 10vh;
+    height: 30vh;
     /* width: 30vw; */
   }
 }
+
+.green-pink-gradient {
+  background: '#be85c0 ';
+  background: linear-gradient(90.13deg, #be85c0 1.9%, #bf61ff 97.5%);
+  background: -webkit-linear-gradient(-90.13deg, #be85c0 1.9%, #bf61ff 97.5%);
+}
+
+.box-shadow {
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(11.4px);
+  -webkit-backdrop-filter: blur(11.4px);
+  border: 1px solid rgba(255, 255, 255, 0.34);
+}
+
+.skill-shadow {
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 50%;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.698);
+  backdrop-filter: blur(11.4px);
+  -webkit-backdrop-filter: blur(11.4px);
+  border: 1px solid rgba(255, 255, 255, 0.34);
+}
+.project-shadow {
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 10px;
+  box-shadow: 0 4px 30px #ad64f14b;
+  backdrop-filter: blur(11.4px);
+  -webkit-backdrop-filter: blur(11.4px);
+  border: 1px solid rgba(255, 255, 255, 0.34);
+}
+
+.date {
+  color: rgb(55 65 81);
+}
+
+
+

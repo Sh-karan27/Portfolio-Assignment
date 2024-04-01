@@ -2,7 +2,7 @@ import React, { useState, useEffect, createContext, useContext } from 'react';
 import axios from 'axios';
 
 const UserDataContext = createContext();
-export const userUserData = () => useContext(UserDataContext);
+export const useUserData = () => useContext(UserDataContext);
 
 export const UserDataProvider = ({ children }) => {
   const [userData, setUserData] = useState(['']);
