@@ -2,7 +2,7 @@ import React from 'react';
 
 const Footer = () => {
   return (
-    <section className=' mt-20 w-full h-full flex items-center justify-center'>
+    <section className=' mt-10 w-full h-full flex items-center justify-center'>
       <div className='w-3/4  text-center'>
         <h1 className='text-gray-500 text-xs md:text-sm '>
           {' '}
