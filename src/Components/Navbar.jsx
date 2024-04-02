@@ -34,7 +34,7 @@ const Navbar = () => {
                 id='Nav'
                 onClick={() => handleOnClick}
                 className={`${active} opacity-0 text-lg translate-x-10 px-5 cursor-pointer  hover:underline  `}>
-                {nav}
+                {nav.charAt(0).toUpperCase() + nav.slice(1)}
               </div>
             </NavLink>
           ))}
@@ -64,7 +64,7 @@ const Navbar = () => {
                 key={nav}
                 className='px-4 py-2 text-[10px] text-white hover:underline  '
                 style={{ transition: 'transform 0.5s ease-in-out' }}>
-                {nav}
+                {nav.charAt(0).toUpperCase() + nav.slice(1)}
               </NavLink>
             ))}
           </div>
