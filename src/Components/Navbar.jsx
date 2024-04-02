@@ -28,7 +28,7 @@ const Navbar = () => {
     <header className='w-full py-5 sm:py-10 px-5 flex justify-between items-center'>
       <nav className='flex w-full screen-max-width'>
         <div className='flex flex-1 justify-center max-sm:hidden'>
-          {['Home', 'About', 'Services', 'Project', 'Contact'].map((nav) => (
+          {['home', 'about', 'services', 'project', 'contact'].map((nav) => (
             <NavLink to={nav === 'Home' ? '/' : `/${nav}`} key={nav}>
               <div
                 id='Nav'
