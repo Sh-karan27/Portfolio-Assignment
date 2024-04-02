@@ -161,7 +161,9 @@ const Contact = () => {
             <h1 className='text-purple-500 text-3xl'>Socials</h1>
             <div className='w-3/4  flex items-center justify-center gap-10'>
               {social.map((social) => (
-                <div className='flex flex-col  items-center justify-center'>
+                <div
+                  key={social.platform}
+                  className='flex flex-col  items-center justify-center'>
                   <img
                     src={social.image.url}
                     alt={social.namme}

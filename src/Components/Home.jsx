@@ -15,12 +15,12 @@ const Home = () => {
   }, [userAbout]);
 
   if (!userAbout) {
-    return <div clas>Loading...</div>;
+    return <div>Loading...</div>;
   }
 
-  if (!userAbout.avatar || !userAbout.avatar.url) {
-    return <div className='text-black'>Loading...</div>;
-  }
+  // if (!userAbout.avatar || !userAbout.avatar.url) {
+  //   return <div>Loading...</div>;
+  // }
 
   return (
     <section className='mt-20 w-full h-full flex-col gap-20 flex items-center justify-center relative max-sm:gap-0 max-sm:mt-0'>
@@ -29,7 +29,7 @@ const Home = () => {
           src={`${userAbout.avatar.url}`}
           alt='userImg'
           id='HeroImg'
-          className=' w-[12%] rounded-l-full opacity-1 translate-y-20 opacity-0 max-sm:w-[10rem] max-md:w-[15rem] '
+          className=' w-[12%] rounded-l-full opacity-1 translate-y-20 opacity-0 max-sm:w-[10rem] md:w-[10rem] '
         />
 
         <div

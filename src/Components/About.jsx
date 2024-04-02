@@ -9,7 +9,6 @@ import gsap from 'gsap';
 import { useEffect } from 'react';
 import { ScrollTrigger } from 'gsap/all';
 
-
 const About = () => {
   const userData = useUserData();
   const userAbout = useUserAboutData();
@@ -50,11 +49,10 @@ const About = () => {
 
       scrollTrigger: {
         trigger: '#skill',
-        start: 'top bottom', // Start animation when the center of the element reaches the bottom of the viewport
-        end: 'bottom center', // End animation when the center of the element reaches the center of the viewport
+        start: 'top bottom',
+        end: 'bottom center',
         scrub: true,
         onEnter: () => {
-          // Define animation to run when the element enters the scroll trigger
           gsap.to('#skill', {
             opacity: 1,
             duration: 1.5,

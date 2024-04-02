@@ -14,7 +14,7 @@ export const UserDataProvider = ({ children }) => {
           'https://portfolio-backend-30mp.onrender.com/api/v1/get/user/65b3a22c01d900e96c4219ae'
         );
         setUserData(response.data.user);
-        console.log(response.data.user);
+        
       } catch (error) {
         console.error('Error fetching user about data:', error);
       }
