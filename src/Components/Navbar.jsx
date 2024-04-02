@@ -29,7 +29,7 @@ const Navbar = () => {
       <nav className='flex w-full screen-max-width'>
         <div className='flex flex-1 justify-center max-sm:hidden'>
           {['home', 'about', 'services', 'project', 'contact'].map((nav) => (
-            <NavLink to={nav === 'Home' ? '/' : `/${nav}`} key={nav}>
+            <NavLink to={nav === 'home' ? '/' : `/${nav}`} key={nav}>
               <div
                 id='Nav'
                 onClick={() => handleOnClick}
