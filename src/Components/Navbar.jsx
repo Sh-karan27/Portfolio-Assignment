@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { NavLink } from 'react-router-dom';
+import { Link, NavLink } from 'react-router-dom';
 import { RxCross1 } from 'react-icons/rx';
 import { GiHamburgerMenu } from 'react-icons/gi';
 import { useGSAP } from '@gsap/react';
@@ -30,12 +30,12 @@ const Navbar = () => {
         <div className='flex flex-1 justify-center max-sm:hidden'>
           {['home', 'about', 'services', 'project', 'contact'].map((nav) => (
             <NavLink to={nav === 'home' ? '/' : `/${nav}`} key={nav}>
-              <div
+              <Link
                 id='Nav'
                 onClick={() => handleOnClick}
                 className={`${active} opacity-0 text-lg translate-x-10 px-5 cursor-pointer  hover:underline  `}>
                 {nav.charAt(0).toUpperCase() + nav.slice(1)}
-              </div>
+              </Link>
             </NavLink>
           ))}
         </div>
