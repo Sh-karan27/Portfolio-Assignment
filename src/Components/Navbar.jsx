@@ -9,15 +9,15 @@ const Navbar = () => {
   const [active, setActive] = useState(null);
   const [smallMenu, setSmallMenu] = useState(false);
 
-  // useGSAP(() => {
-  //   gsap.to('#Nav', {
-  //     opacity: 1,
-  //     delay: 1,
-  //     x: 0,
-  //     duration: 1,
-  //     stagger: 0.1,
-  //   });
-  // }, []);
+  useGSAP(() => {
+    gsap.to('#Nav', {
+      opacity: 1,
+      delay: 1,
+      x: 0,
+      duration: 1,
+      stagger: 0.1,
+    });
+  }, []);
   const handleOnClick = () => {
     setActive('active ');
   };
