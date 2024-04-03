@@ -93,7 +93,7 @@ const Contact = () => {
                   className=' project-shadow font-medium border-none py-4 px-6 placeholder:text-gray-500 rounded-lg outline-none'
                   type='text'
                   name='name'
-                  onChange={handleChange}
+                  // onChange={handleChange}
                   // value={form.name}
                   placeholder="What's your name?"
                 />
