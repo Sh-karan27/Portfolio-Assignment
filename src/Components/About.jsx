@@ -12,58 +12,58 @@ import { ScrollTrigger } from 'gsap/all';
 const About = () => {
   const userData = useUserData();
   const userAbout = useUserAboutData();
-  useEffect(() => {
-    gsap.registerPlugin(ScrollTrigger);
-  }, []);
+  // useEffect(() => {
+  //   gsap.registerPlugin(ScrollTrigger);
+  // }, []);
 
-  useGSAP(() => {
-    gsap.to('#text-1', {
-      opacity: 1,
-      x: 0,
-      delay: 1.5,
-    });
-    gsap.to('#text-2', {
-      opacity: 1,
-      x: 0,
-      delay: 1.7,
-    });
+  // useGSAP(() => {
+  //   gsap.to('#text-1', {
+  //     opacity: 1,
+  //     x: 0,
+  //     delay: 1.5,
+  //   });
+  //   gsap.to('#text-2', {
+  //     opacity: 1,
+  //     x: 0,
+  //     delay: 1.7,
+  //   });
 
-    gsap.to('#text-3', {
-      opacity: 1,
-      y: 0,
-      delay: 2,
-    });
-    gsap.to('#text-4', {
-      opacity: 1,
-      x: 0,
-      delay: 2.3,
-    });
-    gsap.to('.show-card', {
-      opacity: 1,
-      stagger: 0.4,
-      delay: 2.3,
-    });
-    gsap.to('#services', {
-      duration: 0.5,
-      ease: 'power2.out',
+  //   gsap.to('#text-3', {
+  //     opacity: 1,
+  //     y: 0,
+  //     delay: 2,
+  //   });
+  //   gsap.to('#text-4', {
+  //     opacity: 1,
+  //     x: 0,
+  //     delay: 2.3,
+  //   });
+  //   gsap.to('.show-card', {
+  //     opacity: 1,
+  //     stagger: 0.4,
+  //     delay: 2.3,
+  //   });
+  //   gsap.to('#services', {
+  //     duration: 0.5,
+  //     ease: 'power2.out',
 
-      scrollTrigger: {
-        trigger: '#skill',
-        start: 'top bottom',
-        end: 'bottom center',
-        scrub: true,
-        onEnter: () => {
-          gsap.to('#skill', {
-            opacity: 1,
-            duration: 1.5,
-            delay: 1,
-            x: 0,
-            stagger: 0.3,
-          });
-        },
-      },
-    });
-  }, [userData]);
+  //     scrollTrigger: {
+  //       trigger: '#skill',
+  //       start: 'top bottom',
+  //       end: 'bottom center',
+  //       scrub: true,
+  //       onEnter: () => {
+  //         gsap.to('#skill', {
+  //           opacity: 1,
+  //           duration: 1.5,
+  //           delay: 1,
+  //           x: 0,
+  //           stagger: 0.3,
+  //         });
+  //       },
+  //     },
+  //   });
+  // }, [userData]);
 
   if (!userAbout) {
     return <div clas>Loading...</div>;
