@@ -11,7 +11,6 @@ const Services = () => {
       opacity: 1,
       y: 0,
       delay: 1,
-      
     });
   }, [userData]);
   if (!userData.services) {

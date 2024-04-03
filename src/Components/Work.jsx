@@ -61,17 +61,18 @@ const Work = () => {
             id='project-h3'
             className=' translate-y-20 opacity-0 text-4xl font-bold text-gray-500'>
             Checkout my{' '}
-            <spna
+            <span
               id='span-2'
               className='text-4xl text-purple-700 translate-x-5 opacity-0'>
               GitHub
-            </spna>{' '}
+            </span>{' '}
             for more.
           </h3>
         </div>
         <div className='  grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 max-lg:grid-cols-1 m-10 gap-20 justify-center'>
           {newProjects.map((project) => (
             <ProjectCard
+              key={project.image.url}
               name={project.title}
               img={project.image.url}
               skill={project.techStack}
