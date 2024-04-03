@@ -18,10 +18,7 @@ This portfolio project is designed as a part of an internship application, showc
 13. Vite: Utilized as the build tool, providing fast and efficient development experience.
 
 
-# Live Demo
-This site was built using [here](https://portfolio-assignment-tawny.vercel.app/).
 
-
-
+[Preview](https://portfolio-assignment-tawny.vercel.app/).
 
 [Project Link](https://github.com/Sh-karan27/Portfolio-Assignment).
