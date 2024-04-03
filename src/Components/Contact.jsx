@@ -7,11 +7,11 @@ import { MdEmail } from 'react-icons/md';
 import { useGSAP } from '@gsap/react';
 import gsap from 'gsap';
 const Contact = () => {
-  // const [form, setForm] = useState({
-  //   name: '',
-  //   email: '',
-  //   message: '',
-  // });
+  const [form, setForm] = useState({
+    name: '',
+    email: '',
+    message: '',
+  });
 
   const userData = useUserData();
   const userAbout = useUserAboutData();
@@ -43,19 +43,24 @@ const Contact = () => {
     return <div>Loading...</div>;
   }
 
-  // const handleChange = (e) => {
-  //   const { target } = e;
-  //   const { name, value } = target;
+  const handleChange = (e) => {
+    const { target } = e;
+    const { name, value } = target;
 
-  //   setForm({
-  //     ...form,
-  //     [name]: value,
-  //   });
-  // };
+    setForm({
+      ...form,
+      [name]: value,
+    });
+  };
   const handleSubmit = (e) => {
     e.preventDefault();
 
-    alert('I  will get back to you ASAP');
+    alert(`Name:${form.name} Email:${form.email} Message:${form.message}`);
+    setForm({
+      name: '',
+      email: '',
+      message: '',
+    });
   };
 
   return (
@@ -93,8 +98,8 @@ const Contact = () => {
                   className=' project-shadow font-medium border-none py-4 px-6 placeholder:text-gray-500 rounded-lg outline-none'
                   type='text'
                   name='name'
-                  // onChange={handleChange}
-                  // value={form.name}
+                  onChange={handleChange}
+                  value={form.name}
                   placeholder="What's your name?"
                 />
               </label>
@@ -104,11 +109,11 @@ const Contact = () => {
                 </span>
                 <input
                   autoComplete='off'
-                  // onChange={handleChange}
+                  onChange={handleChange}
                   className='project-shadow font-medium border-none py-4 px-6 placeholder:text-gray-500 rounded-lg outline-none'
                   type='email'
                   name='email'
-                  // value={form.email}
+                  value={form.email}
                   placeholder="What's your email?"
                 />
               </label>
@@ -117,8 +122,8 @@ const Contact = () => {
                   Your message
                 </span>
                 <textarea
-                  // value={form.message}
-                  // onChange={handleChange}
+                  value={form.message}
+                  onChange={handleChange}
                   rows='7'
                   className=' project-shadow font-medium border-none py-4 px-6 placeholder:text-gray-500 rounded-lg outline-none'
                   name='message'
@@ -126,6 +131,7 @@ const Contact = () => {
                 />
               </label>
               <button
+                value='Send'
                 type='submit'
                 className=' project-shadow outline-none w-fit py-3 px-8 font-bold  bg-white rounded-lg text-purple-500'>
                 Send

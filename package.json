@@ -11,6 +11,7 @@
   },
   "dependencies": {
     "@emailjs/browser": "^4.3.3",
+    "@formspree/react": "^2.5.1",
     "@gsap/react": "^2.1.0",
     "@react-three/drei": "^9.102.6",
     "@react-three/fiber": "^8.16.1",
